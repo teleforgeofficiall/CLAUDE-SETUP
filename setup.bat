@@ -1,4 +1,5 @@
 @echo off
+chcp 65001 >nul
 title TELEFORGE
 color 0D
 cls
@@ -134,6 +135,7 @@ echo.
 :: ========== CREATE START_CLAUDE.BAT ON DESKTOP ==========
 (
 echo @echo off
+echo chcp 65001 ^>nul
 echo title TELEFORGE
 echo color 0D
 echo cls
