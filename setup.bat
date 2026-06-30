@@ -1,18 +1,21 @@
 @echo off
-title TELEFORGE - Claude Free Setup
-color 0B
+title TELEFORGE
+color 0D
 cls
-echo  ████████╗███████╗██╗     ███████╗███████╗ ██████╗ ██████╗  ██████╗ ███████╗
-echo  ╚══██╔══╝██╔════╝██║     ██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝ ██╔════╝
-echo     ██║   █████╗  ██║     █████╗  █████╗  ██║   ██║██████╔╝██║  ███╗█████╗
-echo     ██║   ██╔══╝  ██║     ██╔══╝  ██╔══╝  ██║   ██║██╔══██╗██║   ██║██╔══╝
-echo     ██║   ███████╗███████╗██║     ██║     ╚██████╔╝██║  ██║╚██████╔╝███████╗
-echo     ╚═╝   ╚══════╝╚══════╝╚═╝     ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 echo.
-echo ============================================================
-echo       CLAUDE CODE  +  OPENCODE FREE MODELS
-echo       Channel: https://t.me/TeleforgeOfficial
-echo ============================================================
+echo  ###########################################################
+echo  #                                                         #
+echo  #  ##### ##### #     ##### #####  ###  ####   #### #####  #
+echo  #    #   #     #     #     #     #   # #   # #     #      #
+echo  #    #   ##### #     ##### ##### #   # ####  #  ## #####  #
+echo  #    #   #     #     #     #     #   # #  #  #   # #      #
+echo  #    #   ##### ##### ##### #      ###  #   #  #### #####  #
+echo  #                                                         #
+echo  ###########################################################
+echo.
+echo          CLAUDE CODE  +  OPENCODE FREE MODELS
+echo          Channel: https://t.me/TeleforgeOfficial
+echo.
 echo.
 start https://t.me/TeleforgeOfficial
 echo [*] Checking system requirements...
@@ -131,33 +134,34 @@ echo.
 :: ========== CREATE START_CLAUDE.BAT ON DESKTOP ==========
 (
 echo @echo off
-echo title TELEFORGE - Claude Free
-echo color 0A
+echo title TELEFORGE
+echo color 0D
 echo cls
 echo echo.
-echo echo                          ████████╗███████╗██╗     ███████╗███████╗ ██████╗ ██████╗  ██████╗ ███████╗
-echo echo                          ╚══██╔══╝██╔════╝██║     ██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝ ██╔════╝
-echo echo                             ██║   █████╗  ██║     █████╗  █████╗  ██║   ██║██████╔╝██║  ███╗█████╗
-echo echo                             ██║   ██╔══╝  ██║     ██╔══╝  ██╔══╝  ██║   ██║██╔══██╗██║   ██║██╔══╝
-echo echo                             ██║   ███████╗███████╗██║     ██║     ╚██████╔╝██║  ██║╚██████╔╝███████╗
-echo echo                             ╚═╝   ╚══════╝╚══════╝╚═╝     ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+echo echo  ###########################################################
+echo echo  #                                                         #
+echo echo  #  ##### ##### #     ##### #####  ###  ####   #### #####  #
+echo echo  #    #   #     #     #     #     #   # #   # #     #      #
+echo echo  #    #   ##### #     ##### ##### #   # ####  #  ## #####  #
+echo echo  #    #   #     #     #     #     #   # #  #  #   # #      #
+echo echo  #    #   ##### ##### ##### #      ###  #   #  #### #####  #
+echo echo  #                                                         #
+echo echo  ###########################################################
 echo echo.
-echo echo ============================================================
-echo echo            CLAUDE CODE + OPENCODE FREE MODELS
-echo echo            Channel: https://t.me/TeleforgeOfficial
-echo echo ============================================================
+echo echo          CLAUDE CODE  +  OPENCODE FREE MODELS
+echo echo          Channel: https://t.me/TeleforgeOfficial
 echo echo.
 echo echo [*] Starting Proxy...
 echo start /B python "%USERPROFILE%\proxy.py"
 echo timeout /t 3 /nobreak ^>nul
 echo echo.
 echo echo  ============================================================
-echo echo   [OK] Proxy is running on port 4001
-echo echo   [OK] Type below command to start Claude:
+echo echo    [OK] Proxy is running on port 4001
+echo echo    [OK] Type this command to start Claude:
 echo echo.
-echo echo        ^>^>^> claude ^<^<^<
+echo echo          ^>^>^>  claude  ^<^<^<
 echo echo.
-echo echo   Press Ctrl+C to stop proxy when done
+echo echo    Press Ctrl+C to stop proxy when done
 echo echo  ============================================================
 echo echo.
 echo echo.
