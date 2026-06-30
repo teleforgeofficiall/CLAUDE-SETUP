@@ -39,8 +39,7 @@ if %errorlevel% neq 0 (
         pause
     )
     echo [*] Installing... please wait.
-    call waitfor /t 15 >nul
-    call refreshenv >nul 2>&1
+    timeout /t 15 /nobreak >nul
     set "PATH=%PATH%;C:\Program Files\nodejs\;%APPDATA%\npm\"
 ) else (
     for /f "tokens=*" %%i in ('node --version') do set NODE_VER=%%i
@@ -55,7 +54,7 @@ if %errorlevel% neq 0 (
     curl -L -o "%TEMP%\python-installer.exe" "https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe" --progress-bar
     "%TEMP%\python-installer.exe" /quiet InstallAllUsers=0 PrependPath=1
     echo [*] Installing... please wait.
-    call waitfor /t 15 >nul
+    timeout /t 15 /nobreak >nul
     set "PATH=%PATH%;%LOCALAPPDATA%\Programs\Python\Python311\;%LOCALAPPDATA%\Programs\Python\Python311\Scripts\"
 ) else (
     for /f "tokens=*" %%i in ('python --version') do set PY_VER=%%i
@@ -133,41 +132,12 @@ echo [OK] settings.json created
 echo.
 
 :: ========== CREATE START_CLAUDE.BAT ON DESKTOP ==========
-set "SC=%USERPROFILE%\Desktop\start_claude.bat"
-echo @echo off > "%SC%"
-echo chcp 65001 ^>nul >> "%SC%"
-echo title TELEFORGE >> "%SC%"
-echo color 0D >> "%SC%"
-echo cls >> "%SC%"
-echo echo. >> "%SC%"
-echo echo   ████████████████████████████████████████████████████████████████████████████ >> "%SC%"
-echo echo   █                                                                           █ >> "%SC%"
-echo echo   █  ███████ ███████ ██      ███████ ███████  █████ ███████  █████ ███████  █ >> "%SC%"
-echo echo   █   █████ ██      ██      ██      ██      ██   ██ ██   ██ ██      ██       █ >> "%SC%"
-echo echo   █   █████ ███████ ██      ███████ ███████ ██   ██ ███████ ██ ████ ███████  █ >> "%SC%"
-echo echo   █   █████ ██      ██      ██      ██      ██   ██ ██ ████ ██   ██ ██       █ >> "%SC%"
-echo echo   █   █████ ███████ ███████ ███████ ██       █████ ██   ██  █████ ███████  █ >> "%SC%"
-echo echo   █                                                                           █ >> "%SC%"
-echo echo   ████████████████████████████████████████████████████████████████████████████ >> "%SC%"
-echo echo. >> "%SC%"
-echo echo          CLAUDE CODE  +  OPENCODE FREE MODELS >> "%SC%"
-echo echo          Channel: https://t.me/TeleforgeOfficial >> "%SC%"
-echo echo. >> "%SC%"
-echo echo [*] Starting Proxy... >> "%SC%"
-echo start /B python "%USERPROFILE%\proxy.py" >> "%SC%"
-echo timeout /t 3 /nobreak ^>nul >> "%SC%"
-echo echo. >> "%SC%"
-echo echo  ============================================================ >> "%SC%"
-echo echo    [OK] Proxy is running on port 4001 >> "%SC%"
-echo echo    [OK] Type this command to start Claude: >> "%SC%"
-echo echo. >> "%SC%"
-echo echo          ^>^>^>  claude  ^<^<^< >> "%SC%"
-echo echo. >> "%SC%"
-echo echo    Press Ctrl+C to stop proxy when done >> "%SC%"
-echo echo  ============================================================ >> "%SC%"
-echo echo. >> "%SC%"
-echo cmd /k >> "%SC%"
-echo [OK] start_claude.bat created on Desktop!
+python "%~dp0create_shortcut.py"
+if %errorlevel% neq 0 (
+    echo [!] start_claude.bat creation failed.
+    echo [!] Check Python installation manually.
+    pause
+)
 echo.
 
 :: ========== CLEANUP ==========
