@@ -133,42 +133,40 @@ echo [OK] settings.json created
 echo.
 
 :: ========== CREATE START_CLAUDE.BAT ON DESKTOP ==========
-(
-echo @echo off
-echo chcp 65001 ^>nul
-echo title TELEFORGE
-echo color 0D
-echo cls
-echo echo.
-echo echo   ████████████████████████████████████████████████████████████████████████████
-echo echo   █                                                                           █
-echo echo   █  ███████ ███████ ██      ███████ ███████  █████ ███████  █████ ███████  █
-echo echo   █   █████ ██      ██      ██      ██      ██   ██ ██   ██ ██      ██       █
-echo echo   █   █████ ███████ ██      ███████ ███████ ██   ██ ███████ ██ ████ ███████  █
-echo echo   █   █████ ██      ██      ██      ██      ██   ██ ██ ████ ██   ██ ██       █
-echo echo   █   █████ ███████ ███████ ███████ ██       █████ ██   ██  █████ ███████  █
-echo echo   █                                                                           █
-echo echo   ████████████████████████████████████████████████████████████████████████████
-echo echo.
-echo echo          CLAUDE CODE  +  OPENCODE FREE MODELS
-echo echo          Channel: https://t.me/TeleforgeOfficial
-echo echo.
-echo echo [*] Starting Proxy...
-echo start /B python "%USERPROFILE%\proxy.py"
-echo timeout /t 3 /nobreak ^>nul
-echo echo.
-echo echo  ============================================================
-echo echo    [OK] Proxy is running on port 4001
-echo echo    [OK] Type this command to start Claude:
-echo echo.
-echo echo          ^>^>^>  claude  ^<^<^<
-echo echo.
-echo echo    Press Ctrl+C to stop proxy when done
-echo echo  ============================================================
-echo echo.
-echo echo.
-echo cmd /k
-) > "%USERPROFILE%\Desktop\start_claude.bat"
+set "SC=%USERPROFILE%\Desktop\start_claude.bat"
+echo @echo off > "%SC%"
+echo chcp 65001 ^>nul >> "%SC%"
+echo title TELEFORGE >> "%SC%"
+echo color 0D >> "%SC%"
+echo cls >> "%SC%"
+echo echo. >> "%SC%"
+echo echo   ████████████████████████████████████████████████████████████████████████████ >> "%SC%"
+echo echo   █                                                                           █ >> "%SC%"
+echo echo   █  ███████ ███████ ██      ███████ ███████  █████ ███████  █████ ███████  █ >> "%SC%"
+echo echo   █   █████ ██      ██      ██      ██      ██   ██ ██   ██ ██      ██       █ >> "%SC%"
+echo echo   █   █████ ███████ ██      ███████ ███████ ██   ██ ███████ ██ ████ ███████  █ >> "%SC%"
+echo echo   █   █████ ██      ██      ██      ██      ██   ██ ██ ████ ██   ██ ██       █ >> "%SC%"
+echo echo   █   █████ ███████ ███████ ███████ ██       █████ ██   ██  █████ ███████  █ >> "%SC%"
+echo echo   █                                                                           █ >> "%SC%"
+echo echo   ████████████████████████████████████████████████████████████████████████████ >> "%SC%"
+echo echo. >> "%SC%"
+echo echo          CLAUDE CODE  +  OPENCODE FREE MODELS >> "%SC%"
+echo echo          Channel: https://t.me/TeleforgeOfficial >> "%SC%"
+echo echo. >> "%SC%"
+echo echo [*] Starting Proxy... >> "%SC%"
+echo start /B python "%USERPROFILE%\proxy.py" >> "%SC%"
+echo timeout /t 3 /nobreak ^>nul >> "%SC%"
+echo echo. >> "%SC%"
+echo echo  ============================================================ >> "%SC%"
+echo echo    [OK] Proxy is running on port 4001 >> "%SC%"
+echo echo    [OK] Type this command to start Claude: >> "%SC%"
+echo echo. >> "%SC%"
+echo echo          ^>^>^>  claude  ^<^<^< >> "%SC%"
+echo echo. >> "%SC%"
+echo echo    Press Ctrl+C to stop proxy when done >> "%SC%"
+echo echo  ============================================================ >> "%SC%"
+echo echo. >> "%SC%"
+echo cmd /k >> "%SC%"
 echo [OK] start_claude.bat created on Desktop!
 echo.
 
