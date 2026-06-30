@@ -49,7 +49,7 @@ class P(http.server.BaseHTTPRequestHandler):
             }, headers={
                 "Authorization": f"Bearer {API_KEY}",
                 "User-Agent": "Mozilla/5.0"
-            }, timeout=60)
+            }, timeout=180)
             plog(f"Upstream: {r.status_code}")
             if r.status_code != 200:
                 self._json(500, {"error": r.text[:300]})

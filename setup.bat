@@ -1,11 +1,18 @@
 @echo off
-title Claude AI + OpenCode Free Setup
+title TELEFORGE - Claude Free Setup
 color 0B
 cls
-echo ============================================
-echo   CLAUDE AI + OPENCODE FREE MODELS SETUP
-echo   Channel: https://t.me/TeleforgeOfficial
-echo ============================================
+echo  ████████╗███████╗██╗     ███████╗███████╗ ██████╗ ██████╗  ██████╗ ███████╗
+echo  ╚══██╔══╝██╔════╝██║     ██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝ ██╔════╝
+echo     ██║   █████╗  ██║     █████╗  █████╗  ██║   ██║██████╔╝██║  ███╗█████╗
+echo     ██║   ██╔══╝  ██║     ██╔══╝  ██╔══╝  ██║   ██║██╔══██╗██║   ██║██╔══╝
+echo     ██║   ███████╗███████╗██║     ██║     ╚██████╔╝██║  ██║╚██████╔╝███████╗
+echo     ╚═╝   ╚══════╝╚══════╝╚═╝     ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+echo.
+echo ============================================================
+echo       CLAUDE CODE  +  OPENCODE FREE MODELS
+echo       Channel: https://t.me/TeleforgeOfficial
+echo ============================================================
 echo.
 start https://t.me/TeleforgeOfficial
 echo [*] Checking system requirements...
@@ -124,23 +131,37 @@ echo.
 :: ========== CREATE START_CLAUDE.BAT ON DESKTOP ==========
 (
 echo @echo off
-echo title Claude AI - OpenCode Free
+echo title TELEFORGE - Claude Free
 echo color 0A
 echo cls
-echo echo ============================================
-echo echo   CLAUDE AI + OPENCODE FREE MODELS
-echo echo   Channel: https://t.me/TeleforgeOfficial
-echo echo ============================================
+echo echo.
+echo echo                          ████████╗███████╗██╗     ███████╗███████╗ ██████╗ ██████╗  ██████╗ ███████╗
+echo echo                          ╚══██╔══╝██╔════╝██║     ██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝ ██╔════╝
+echo echo                             ██║   █████╗  ██║     █████╗  █████╗  ██║   ██║██████╔╝██║  ███╗█████╗
+echo echo                             ██║   ██╔══╝  ██║     ██╔══╝  ██╔══╝  ██║   ██║██╔══██╗██║   ██║██╔══╝
+echo echo                             ██║   ███████╗███████╗██║     ██║     ╚██████╔╝██║  ██║╚██████╔╝███████╗
+echo echo                             ╚═╝   ╚══════╝╚══════╝╚═╝     ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+echo echo.
+echo echo ============================================================
+echo echo            CLAUDE CODE + OPENCODE FREE MODELS
+echo echo            Channel: https://t.me/TeleforgeOfficial
+echo echo ============================================================
 echo echo.
 echo echo [*] Starting Proxy...
 echo start /B python "%USERPROFILE%\proxy.py"
 echo timeout /t 3 /nobreak ^>nul
-echo echo [OK] Ready!
 echo echo.
-echo call claude
+echo echo  ============================================================
+echo echo   [OK] Proxy is running on port 4001
+echo echo   [OK] Type below command to start Claude:
 echo echo.
-echo echo [*] Cleaning up...
-echo taskkill /f /im python.exe ^>nul 2^>^&1
+echo echo        ^>^>^> claude ^<^<^<
+echo echo.
+echo echo   Press Ctrl+C to stop proxy when done
+echo echo  ============================================================
+echo echo.
+echo echo.
+echo cmd /k
 ) > "%USERPROFILE%\Desktop\start_claude.bat"
 echo [OK] start_claude.bat created on Desktop!
 echo.

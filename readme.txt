@@ -1,7 +1,14 @@
-============================================
-  CLAUDE AI + OPENCODE FREE MODELS SETUP
-  Channel: https://t.me/TeleforgeOfficial
-============================================
+████████╗███████╗██╗     ███████╗███████╗ ██████╗ ██████╗  ██████╗ ███████╗
+╚══██╔══╝██╔════╝██║     ██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝ ██╔════╝
+   ██║   █████╗  ██║     █████╗  █████╗  ██║   ██║██████╔╝██║  ███╗█████╗
+   ██║   ██╔══╝  ██║     ██╔══╝  ██╔══╝  ██║   ██║██╔══██╗██║   ██║██╔══╝
+   ██║   ███████╗███████╗██║     ██║     ╚██████╔╝██║  ██║╚██████╔╝███████╗
+   ╚═╝   ╚══════╝╚══════╝╚═╝     ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+
+         CLAUDE CODE + OPENCODE FREE MODELS
+         Channel: https://t.me/TeleforgeOfficial
+
+============================================================
 
 KYA HAI YE?
 -----------
@@ -11,15 +18,15 @@ Proxy convert karti hai Anthropic format ko OpenAI format mein.
 FILES:
 ------
 - setup.bat   → FIRST TIME SETUP (1 baar chalana hai)
-- start.bat   → ROZ KE USE KE LIYE (proxy + claude launch)
 - proxy.py    → Proxy script (background mein chalti hai)
 
 SETUP KAISE KAREIN (NEW PC):
 -------------------------------
 1. Folder ko USB ya cloud se naye PC mein copy karo
-2. setup.bat RIGHT-CLICK -> "Run as Administrator" (nahi to double click)
+2. setup.bat RIGHT-CLICK -> "Run as Administrator"
    - Telegram link khulega
    - API key maangega (https://opencode.ai/auth se copy karo)
+   - Node.js / Python auto install hoga (agar nahi hai to)
    - Apne aap Claude Code install/uninstall karega
    - Settings.json bana dega
    - Desktop pe "start_claude.bat" bana dega
@@ -27,17 +34,18 @@ SETUP KAISE KAREIN (NEW PC):
 
 ROZ KAISE USE KAREIN:
 -----------------------
-Double-click "start_claude.bat" (Desktop par)
-Ya "start.bat" (setup folder mein)
+1. Double-click "start_claude.bat" (Desktop par)
+2. Proxy start hoga, ">>> claude <<<" dikhega
+3. Khud type karo: claude
 
 REQUIREMENTS:
 --------------
-- Node.js (https://nodejs.org)
-- Python 3 (https://python.org)
+- Node.js (auto-install hota hai)
+- Python 3 (auto-install hota hai)
 
 NOTE:
-Proxy background mein chalti hai. Jab Claude band karte ho,
-proxy apne aap band ho jayega.
+Proxy background mein chalti hai (port 4001).
+Jab kaam khatam ho, Ctrl+C press karo proxy band karne ke liye.
 
 FREE MODELS AVAILABLE:
 - deepseek-v4-flash-free (default)
