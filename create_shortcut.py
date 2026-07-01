@@ -31,7 +31,7 @@ lines = [
     "echo    [OK] Proxy is running on port 4001",
     "echo    [OK] Type this command to start Claude:",
     "echo.",
-    "echo          >>>  claude  <<<",
+    "echo          ^>^>^>  claude  ^<^<^<",
     "echo.",
     "echo    Press Ctrl+C to stop proxy when done",
     "echo  ============================================================",

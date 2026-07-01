@@ -45,7 +45,7 @@ class P(http.server.BaseHTTPRequestHandler):
             plog(f"{d.get('model','?')} -> {m} | {len(ms)} msgs")
             r = requests.post(BASE, json={
                 "model": m, "messages": ms,
-                "max_tokens": d.get("max_tokens", 4096), "stream": False
+                "max_tokens": d.get("max_tokens", 16384), "stream": False
             }, headers={
                 "Authorization": f"Bearer {API_KEY}",
                 "User-Agent": "Mozilla/5.0"
